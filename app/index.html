@@ -11,6 +11,15 @@
 </head>
 <body>
 
+    <div class="Options">
+        
+        <input type="button" value="Start" class="Start" id="Start" onclick="SelectRandomColor()">
+        <input type="button" value="Give Up" class="GiveUp" id="GiveUp" onclick="GiveUp()">
+        <input type="button" value="Reset" class="Reset" id="Reset" onclick="Reset()">
+
+    </div>
+
+
     <div class="colors">
 
         <input type="button" value="Red" class="colors" onclick="setText(text = this.value)">
@@ -24,10 +33,10 @@
 
     <div class="slots">
 
-        <input type="button" value="" class="slotforcolors" readonly onclick="setColor(thisColor = this)">
-        <input type="button" value="" class="slotforcolors" readonly onclick="setColor(thisColor = this)">
-        <input type="button" value="" class="slotforcolors" readonly onclick="setColor(thisColor = this)">
-        <input type="button" value="" class="slotforcolors" readonly onclick="setColor(thisColor = this)">
+        <input type="button" value="" class="slotforcolors" id="slot1" readonly onclick="setColor(thisColor = this)">
+        <input type="button" value="" class="slotforcolors" id="slot2" readonly onclick="setColor(thisColor = this)">
+        <input type="button" value="" class="slotforcolors" id="slot3" readonly onclick="setColor(thisColor = this)">
+        <input type="button" value="" class="slotforcolors" id="slot4" readonly onclick="setColor(thisColor = this)">
 
     </div>
 
