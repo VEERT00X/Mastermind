@@ -4,51 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MasterMind</title>
-    <script src="./script.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 
 </head>
 <body>
 
+    <div class="colors">
 
-    <div id="MainBox" class="MainBox">
-
+        <input type="button" value="Red" class="colors" onclick="setText(text = this.value)">
+        <input type="button" value="Blue" class="colors" onclick="setText(text = this.value)">
+        <input type="button" value="Yellow" class="colors" onclick="setText(text = this.value)">
+        <input type="button" value="Green" class="colors" onclick="setText(text = this.value)">
+        <input type="button" value="Orange" class="colors" onclick="setText(text = this.value)">
+        <input type="button" value="Purple" class="colors" onclick="setText(text = this.value)">
         
+    </div>
 
+    <div class="slots">
 
-        <div id="colors">
-
-            <button id="red" >Red</button>
-            <button id="blue">Blue</button>
-            <button id="yellow">Yellow</button>
-            <button id="green">Green</button>
-            <button id="purple">Purple</button>
-            <button id="orange">Orange</button>
-
-        </div>
-
-        <div id="menu">
-
-            <button type="submit"> Send Results </button>
-            <button type="reset"> Reset </button>
-
-        </div>
-
-        <div id="colorfeilds">
-
-            <input type="text" disabled id="1">
-            <input type="text" disabled id="2">
-            <input type="text" disabled id="3">
-            <input type="text" disabled id="4">
-    
-
-        </div>
-
-        <h1 id="testConcurentColor"></h1>
-
+        <input type="button" value="" class="slotforcolors" readonly onclick="setColor(thisColor = this)">
+        <input type="button" value="" class="slotforcolors" readonly onclick="setColor(thisColor = this)">
+        <input type="button" value="" class="slotforcolors" readonly onclick="setColor(thisColor = this)">
+        <input type="button" value="" class="slotforcolors" readonly onclick="setColor(thisColor = this)">
 
     </div>
 
-
+    <h1 id="SelectText">Selected : </h1>
+    
 </body>
 </html>
